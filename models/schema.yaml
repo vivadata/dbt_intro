@@ -1,0 +1,20 @@
+sources:
+  - name: jaffle_shop
+    database: dbt-tutorial
+    schema: jaffle_shop
+    tables:
+      - name: orders
+        columns:
+          - name: id
+            data_test:
+              - unique
+              - not_null
+
+      - name: customers
+
+models:
+  - name: customers
+    columns:
+      - name: customer_id
+        data_test: -unique
+          -not_null
