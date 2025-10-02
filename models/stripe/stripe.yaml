@@ -1,0 +1,8 @@
+models:
+  - name: stg_payment
+    columns:
+      - name: amount
+        tests:
+           - dbt_expectations.expect_column_max_to_be_between:
+              max_value: 1000
+              
