@@ -7,3 +7,5 @@ select
 
     FROM {{ ref("stg_orders")}}
     group by 1
+
+
